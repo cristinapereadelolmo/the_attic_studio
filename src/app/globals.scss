@@ -1,0 +1,25 @@
+
+@forward 'bootstrap/dist/css/bootstrap.min.css';
+@forward 'react-photo-view/dist/react-photo-view.css';
+@forward 'react-toastify/dist/ReactToastify.css';
+@forward "react-datepicker/dist/react-datepicker.css";
+@forward "../../public/assets/css/fontawesome-pro.css";
+@forward '../../public/assets/css/nice-select.css';
+@forward '../../public/assets/css/backtotop.css';
+@forward '../../public/assets/css/meanmenu.min.css';
+@forward '../../public/assets/css/spacing.css';
+@forward '../../public/assets/css/animate.min.css';
+@forward '../../public/assets/css/flaticon_musicly.css';
+@forward '../../public/assets/scss/main.scss';
+
+@font-face {
+  font-family: "flaticon_musicly";
+  src: url("../../public/assets/fonts/./flaticon_musicly.ttf?094a1b535815e723ca9e8b049b7cecc5")
+      format("truetype"),
+    url("../../public/assets/fonts/./flaticon_musicly.woff?094a1b535815e723ca9e8b049b7cecc5")
+      format("woff"),
+    url("../../public/assets/fonts/./flaticon_musicly.woff2?094a1b535815e723ca9e8b049b7cecc5")
+      format("woff2"),
+    url("../../public/assets/fonts/./flaticon_musicly.eot?094a1b535815e723ca9e8b049b7cecc5#iefix")
+      format("embedded-opentype");
+}
