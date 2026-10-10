@@ -85,63 +85,6 @@ const menu_data: TMenuItem[] = [
         link: "/gallery",
     },
     {
-        id: 6,
-        title: "Pages",
-        link: "#",
-        megaMenu: true,
-        hasDropdown: false,
-        // pages: true,
-        menuItem: true,
-        mega_menus: [
-            {
-                title: "Page Layout 1", link: "#",
-                submenus: [
-                    { title: "Home Style 01", link: "/" },
-                    { title: "Ideas Advice", link: "/ideas-advice" },
-                    { title: "Ideas Advice Details", link: "/ideas-advice-details" },
-                    { title: "Team", link: "/team" },
-                    { title: "Team Details", link: "/team-details" },
-
-                ],
-            },
-            {
-                title: "Page Layout 2", link: "#",
-                submenus: [
-                    { title: "About", link: "/about" },
-                    { title: "Genres", link: "/genres" },
-                    { title: "Genres Details", link: "/genres-details" },
-                    { title: "Enquiry List", link: "/enquiry-list" },
-                    { title: "Faq", link: "/faq" },
-                    { title: "Join Us", link: "/join" },
-                    { title: "404 Page", link: "/404-page" },
-                ],
-            },
-            {
-                title: "Page Layout 3", link: "#",
-                submenus: [
-                    { title: "Event", link: "/event" },
-                    { title: "Event Details", link: "/event-details" },
-                    { title: "How It Works", link: "/work-system" },
-                    { title: "Terms & Condition", link: "/terms-condition" },
-                    { title: "Privacy & Policy", link: "/privacy-policy" },
-                    { title: "Product Shipping", link: "/product-shipping" },
-                ],
-            },
-            {
-                title: "Page Layout 4", link: "#",
-                submenus: [
-                    { title: "Shop", link: "/shop" },
-                    { title: "Shop Details", link: "/shop-details" },
-                    { title: "Cart", link: "/cart" },
-                    { title: "Wishlist", link: "/wishlist" },
-                    { title: "Login", link: "/login" },
-                    { title: "Register", link: "/signup" },
-                    { title: "Contact", link: "/contact" },
-                ],
-            },
-        ],
-    },
-    {
         id: 7,
         hasDropdown: false,
         title: "FAQ",

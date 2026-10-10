@@ -1,5 +1,4 @@
 
-import ProductActionBtn from '@/components/Shop/ProductActionBtn';
 import ShopMainArea from '@/components/Shop/ShopMainArea';
 import Setting from '@/components/common/setting/Setting';
 import Wrapper from '@/layout/DefaultWrapper';
@@ -16,7 +15,6 @@ const page = () => {
                     </main>
                 </div>
             </Wrapper>
-            <ProductActionBtn />
         </>
     );
 };

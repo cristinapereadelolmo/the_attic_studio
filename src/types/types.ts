@@ -29,7 +29,7 @@ export type TPopularData = {
 //work-future-type
 export type TWorkFuture = {
   id: number;
-  icon: ReactNode;
+  icon?: ReactNode;
   title: string;
   description: string
 }

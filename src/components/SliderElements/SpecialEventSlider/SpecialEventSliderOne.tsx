@@ -31,7 +31,7 @@ const SpecialEventSliderOne = () => {
                         </div>
                         <div className="col-lg-4">
                             <div className="trending-btn mb-40 d-flex justify-content-lg-end">
-                                <Link className="border__btn" href="/event">View All Event</Link>
+                                <Link className="border__btn" href="/gallery">View All Event</Link>
                             </div>
                         </div>
                     </div>

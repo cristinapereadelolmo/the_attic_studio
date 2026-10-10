@@ -31,7 +31,7 @@ const LatestNewsOne = () => {
                                 <div className="col-xl-4 col-md-6" key={item.id}>
                                     <div className="ms-news-item p-relative zindex-1 mb-40">
                                         <div className="ms-news-overlay p-absolute"></div>
-                                        <Link className="ms-news4-cat" href={`/enquiry-list/`}>{item.category}</Link>
+                                        <Link className="ms-news4-cat" href="/services">{item.category}</Link>
                                         <div className="ms-news-thumb w-img">
                                             <Link href={`/blog-details/${item.id}`}>
                                                 <Image loader={imageLoader} placeholder="blur" loading='lazy' style={{ width: '100%', height: "auto" }} src={item.image}

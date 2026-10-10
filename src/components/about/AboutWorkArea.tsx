@@ -1,10 +1,6 @@
 "use client"
 import { imageLoader } from '@/hooks/ImageLoader';
-import WorkFutureIconOne from '@/svg/WorkFutureIconOne';
-import WorkFutureSvgIconThree from '@/svg/WorkFutureSvgIconThree';
-import WorkFutureSvgIconTwo from '@/svg/WorkFutureSvgIconTwo';
 import workThumb from "../../../public/assets/img/work/work-thumb-06.png";
-import workArrow from "../../../public/assets/img/work/arrow.png";
 import { TWorkFuture } from '@/types/types';
 import Image from 'next/image';
 import React from 'react';
@@ -65,7 +61,7 @@ const AboutWorkArea = () => {
                                     <div className="work__features-bottom ms-work3-features pb-90">
                                         <div className="work__features-action">
                                             <div className="work__features-btn ms-work3-feature-btn">
-                                                <Link className="ms-fill-btn" href="/enquiry-list">Learn more about our Services</Link>
+                                                <Link className="ms-fill-btn" href="/services">Learn more about our Services</Link>
                                             </div>
                                         </div>
                                     </div>

@@ -37,7 +37,7 @@ const EventMainArea = () => {
                                                     <Image src={item.image} loader={imageLoader} placeholder="blur" loading='lazy' style={{ width: '100%', height: "auto" }}
                                                         alt="event image" />
                                                 </Link>
-                                                <Link className="ms-news4-cat" href={`/enquiry-list/`}>{item.category}</Link>
+                                                <Link className="ms-news4-cat" href="/services">{item.category}</Link>
                                                 <span className="ms-event3-date">{item.date}</span>
                                                 <div className="ms-event3-content">
                                                     <h3 className="ms-event3-title ms-title-border">
