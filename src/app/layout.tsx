@@ -1,5 +1,4 @@
 import AppProvider from '@/contextApi/AppProvider';
-import ReduxProvider from '@/redux/provider';
 import { ToastContainer } from 'react-toastify';
 import UseMousePointer from '@/utils/MouseCursorUtilis';
 import { DirectionProvider } from '@/hooks/useDirection';
@@ -45,26 +44,24 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         {/* Use the UseMousePointer component */}
-          {/* <UseMousePointer /> */}
-          <ReduxProvider>
-            <AppProvider>
-              <DirectionProvider>
-              {children}
-              </DirectionProvider>
-            </AppProvider>
-            <ToastContainer
-              position="top-left"
-              autoClose={1000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-              theme="light"
-            />
-          </ReduxProvider>
+        {/* <UseMousePointer /> */}
+        <AppProvider>
+          <DirectionProvider>
+            {children}
+          </DirectionProvider>
+        </AppProvider>
+        <ToastContainer
+          position="top-left"
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </body>
     </html>
   );

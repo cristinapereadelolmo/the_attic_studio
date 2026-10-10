@@ -4,7 +4,6 @@ import { imageLoader } from '@/hooks/ImageLoader';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import PaginationData from '../common/pagination/pagination-data';
 import NiceSelect from '../common/NiceSelect';
 type TNiceSelectData = {
     id: number;
@@ -102,7 +101,6 @@ const GenresListingArea = () => {
                             </div>
                             <div className="row">
                                 <div className="col-xl-12">
-                                    <PaginationData />
                                 </div>
                             </div>
                         </div>
@@ -139,7 +137,6 @@ const GenresListingArea = () => {
                             </div>
                             <div className="row">
                                 <div className="col-xl-12">
-                                    <PaginationData />
                                 </div>
                             </div>
                         </div>

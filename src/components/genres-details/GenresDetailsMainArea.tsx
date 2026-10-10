@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';
 import GenresBgImg from '../../../public/assets/img/genres/genres-bg-2.jpg';
 import BookingArea from './BookingArea';
-import BrandLikeArea from './BrandLikeArea';
 import GenresFaq from './GenresFaq';
 import { idType } from '@/types/types';
 import genres_listing_data from '@/data/genres-listing-data';
@@ -89,7 +88,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
             </section>
             <BookingArea />
             <GenresFaq />
-            <BrandLikeArea />
             <ModalVideo isOpen={isOpen} videoUrl="https://www.youtube.com/watch?v=ffQJRqlgf4E" onClose={() => setIsOpen(false)} />
         </>
     );
