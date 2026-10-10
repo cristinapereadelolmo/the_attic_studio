@@ -1,23 +1,35 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import BradcrumbThree from '../common/breadcrumb/BradcrumbThree';
 import Link from 'next/link';
 import latest_news_data from '@/data/latest-news-data';
 import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';
 import PaginationData from '../common/pagination/pagination-data';
-import PartnerAreaMain from '../common/PartnerArea/PartnerAreaMain';
+
+const ITEMS_PER_PAGE = 6;
 
 const EventMainArea = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = Math.ceil(latest_news_data.length / ITEMS_PER_PAGE);
+
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const currentItems = latest_news_data.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+    const handlePageChange = (page: number) => {
+        setCurrentPage(page);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <>
-            <BradcrumbThree title='Special Event' />
+            <BradcrumbThree title='Gallery' />
             <section className="ms-event3-area pt-130 pb-115">
                 <div className="container">
                     <div className="ms-border2 pb-40">
                         <div className="row ms-event3-wrap">
                             {
-                                latest_news_data.slice(15, 24).map((item) => (
+                                currentItems.map((item) => (
                                     <div className="col-xl-4 col-md-6" key={item.id}>
                                         <div className="ms-event3-item mb-25">
                                             <div className="ms-event3-img ms-overlay10 fix ms-br-15 p-relative zindex-10">
@@ -25,15 +37,13 @@ const EventMainArea = () => {
                                                     <Image src={item.image} loader={imageLoader} placeholder="blur" loading='lazy' style={{ width: '100%', height: "auto" }}
                                                         alt="event image" />
                                                 </Link>
-                                                <span className="ms-event3-date">{item.month} <br />{item.date}</span>
+                                                <Link className="ms-news4-cat" href={`/enquiry-list/`}>{item.category}</Link>
+                                                <span className="ms-event3-date">{item.date}</span>
                                                 <div className="ms-event3-content">
-                                                    <div className="ms-event3-location-wrap">
-                                                        <Link href="#" className="ms-event3-location"><i className="flaticon-pin"></i>
-                                                            {item.locationName}</Link>
-                                                    </div>
-                                                    <h3 className="ms-event3-title ms-title-border"><Link
-                                                        href={`/event-details/${item.id}`}>{item.title}</Link>
+                                                    <h3 className="ms-event3-title ms-title-border">
+                                                        {item.title}
                                                     </h3>
+                                                    <p className="ms-news-text mb-25">{item.description}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -44,12 +54,15 @@ const EventMainArea = () => {
                     </div>
                     <div className="row">
                         <div className="col-xl-12">
-                            <PaginationData />
+                            <PaginationData
+                                currentPage={currentPage}
+                                totalPages={totalPages}
+                                onPageChange={handlePageChange}
+                            />
                         </div>
                     </div>
                 </div>
             </section>
-            <PartnerAreaMain />
         </>
     );
 };

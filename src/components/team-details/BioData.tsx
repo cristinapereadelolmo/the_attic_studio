@@ -5,26 +5,33 @@ const BioData = () => {
     return (
         <>
             <div className="ms-team-item-details mb-50">
-                <h4>Biography:</h4>
+                {/*<h4>Biography:</h4>
 
-                <p>Bresaola chicken tri-tip boudin pork belly, filet mignon andouille sausage
-                    hamburger salami turducken. Jerky drumstick shoulder boudin, pork chop short
-                    loin ham. Shoulder brisket beef burgdoggen meatloaf ham hock. Hamburger
-                    venison
-                    shoulder pig cow. Burgdoggen turkey brisket spare ribs ham sausage
-                    frankfurter
-                    porchetta rump.</p>
+                <p>Finn, the Sound Wizard, has a rare gift for finding 
+                    magic in ordinary places. Whenever the streets of 
+                    Cork grow quiet and the moon hangs over the River 
+                    Lee, he knows to keep an eye out for Wok and Roll—a 
+                    mysterious little place that only appears at night 
+                    for those who truly need it. No map can find it, no 
+                    one can remember exactly where it stood the next 
+                    morning, but Finn always follows the warm scent 
+                    of noodles and spices until the glowing sign flickers 
+                    into view.</p>
                 <h4>Proffesional Life:</h4>
 
-                <p>Sausage tail sirloin kielbasa. Short ribs salami alcatra flank pork belly.
-                    Sausage pork loin doner meatball, hamburger andouille venison beef ribs pig
-                    turkey. Ball tip shankle boudin ribeye.</p>
+                <p>The food at Wok and Roll is said to carry a little 
+                    enchantment in every bite. A steaming box of fried 
+                    rice can restore a weary traveller's spirit, while 
+                    the perfect spring roll has been known to banish 
+                    even the darkest mood. Finn insists the magic isn't 
+                    just in the recipes—it's in the timing. Wok and Roll 
+                    appears only when someone has had a long day, an empty 
+                    stomach, and just enough hope left to believe that somewhere
+                     in Cork, a midnight feast is waiting for them.</p>*/}
 
                 <div className="ms-footer-social mb-15 d-flex align-items-center mt-30">
-                    <div className="follow-text">Follow On :</div>
-                    <Link href="https://www.instagram.com/" title="Instagram" target="_blank">IN</Link>
-                    <Link href="https://twitter.com/" title="Twitter" target="_blank">TW</Link>
-                    <Link href="https://www.facebook.com/" title="Facebook" target="_blank">FB</Link>
+                    <div className="follow-text">Find me on Instagram:</div>
+                    <Link href="https://www.instagram.com/finnreuben/" title="Instagram" target="_blank">INSTAGRAM</Link>
                 </div>
             </div>
         </>

@@ -7,71 +7,21 @@ import testimonialSignatureImg from "../../public/assets/img/testimonial/testimo
 const testimonial_data: TTestimonialData[] = [
     {
         id: 1,
-        description: "assumenda fugiat ut quibusdam aliquid qui molestiae itaque est atque iste ea ipsum adipisci ut rerum voluptas ex autem aliquid.Ut voluptatem voluptate et distinctio fuga vel dicta magni.",
-        authorName: "David Camerun",
-        title: "Media Public Manager"
+        description: "Recording my own songs- and especially songs I wrote as a teenager, is the most vulnerable I think I will ever feel in my music career. I literally put it off for years out of fear, but when Finn put on a showcase one night and managed the live sound engineering for my songs- I knew that his studio would be a safe place for my teenage songs to finally grow into studio recordings and released work. He has a wonderful nurturing sensibility, which gives space for the emotion in the music to ring true- and his skills across the board of playing, arranging, mixing and recording; make the experience exciting and full of energy. At least that's what it has done for me. I'm so grateful to Finn and the Attic for bringing my first official releases to the world, and I can't wait to hear all the amazing music that comes out of this studio.",
+        authorName: "Caoimhe Byrne",
+        title: "Singer-Songwriter"
     },
     {
         id: 2,
-        description: "assumenda fugiat ut quibusdam aliquid qui molestiae itaque est atque iste ea ipsum adipisci ut rerum voluptas ex autem aliquid.Ut voluptatem voluptate et distinctio fuga vel dicta magni.",
-        authorName: "David Camerun",
-        title: "Media Public Manager"
+        description: "Working with Finn at The Attic has been one of the most fun, streamlined, fair, and reliable studio experiences of my life. Finn makes you feel welcome, honors your vision, and wastes no time getting a great mix or recording your way. Many artists, myself included, are wary of being strung along or swindled by sleazy producers–– I assure you Finn is about as far from that as they come! You are in good hands with this kind soul.",
+        authorName: "Sylvie Benson",
+        title: "Ladyfern"
     },
     {
         id: 3,
-        description: "assumenda fugiat ut quibusdam aliquid qui molestiae itaque est atque iste ea ipsum adipisci ut rerum voluptas ex autem aliquid.Ut voluptatem voluptate et distinctio fuga vel dicta magni.",
-        authorName: "David Camerun",
-        title: "Media Public Manager"
-    },
-    //home two testimonial data
-    {
-        id: 4,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgOne,
-        description: "Musicaly transformed our events into symphonic experiences. The harmonious blend of melodies created an enchanting atmosphere that captivated everyone. A true masterpiece in the world of musical innovation!",
-        authorName: "Melissa Harmony",
-        designation: "Event Coordinator - Harmonic Events"
-    },
-    {
-        id: 5,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgTwo,
-        description: "The magic of Musicaly is unparalleled. Its rhythmic enchantment resonated with our audience, creating an unforgettable auditory journey. Musicaly is not just a project; it's a transformative symphony!",
-        authorName: "Dio Caprio",
-        designation: "CEO - XYZ Innovation"
-    },
-    {
-        id: 6,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgThree,
-        description: "In the realm of musical innovation, Musicaly stands as a virtuoso. Its ability to harmonize diverse sounds is nothing short of extraordinary. As a CEO, I endorse Musicaly for its revolutionary impact on auditory experiences.",
-        authorName: "Sophia Cadence",
-        designation: "CEO - Crescendo Enterprises"
-    },
-    //home three testimonial data
-    {
-        id: 7,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgOne,
-        description: "Musicaly transformed our events into symphonic experiences. The harmonious blend of melodies created an enchanting atmosphere that captivated everyone. A true masterpiece in the world of musical innovation!",
-        authorName: "Melissa Harmony",
-        designation: "Event Coordinator - Harmonic Events"
-    },
-    {
-        id: 8,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgTwo,
-        description: "The musical performance was beyond our expectations. It added a magical touch to our special day, making it unforgettable. Highly recommend for anyone looking for a musical journey like no other!",
-        authorName: "John Melody",
-        designation: "Wedding Planner - Melodic Weddings"
-    },
-    {
-        id: 9,
-        signatureImg: testimonialSignatureImg,
-        image: testimonialImgThree,
-        description: "Musicaly's musicians are true artists, and their passion for music shines through every note. Our audience was mesmerized by the soulful performance. An absolute delight to work with!",
-        authorName: "Sarah Rhythm",
-        designation: "Concert Organizer - Rhythmic Productions"
+        description: "Very cool place to record in, very chill, non-judgamental. Great coffee. Love the cats. Cool bass. Would recommend to a friend. I also practiced in here, room sounded nice. I like the decoration. The temperature was changed when I told Finn I was too cold, that was nice of him. My backing vocals sound good and all, I was shocked, I am not very skilled, ups. Anyway, definetely would recommend.",
+        authorName: "Cris",
+        title: "Bass Player for Left Iris"
     },
 ]
 

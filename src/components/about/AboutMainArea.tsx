@@ -14,7 +14,6 @@ const AboutMainArea = () => {
             <AboutWorkArea />
             <AboutTeamArea />
             <FaqArea />
-            <PartnerAreaMain borderWrapperClass='ms-border5' spacingClass='pt-130' />
         </>
     );
 };

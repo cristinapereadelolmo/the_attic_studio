@@ -114,14 +114,9 @@ export type TTeamData = {
 export type TGenresListing = {
   id: number,
   image: StaticImageData,
-  price?: number,
   videoUrl?: string,
   title: string,
   description: string,
-  mapLink: string,
-  location?: string,
-  ratings: number,
-  ratingNum?: number,
   activeClass?: string;
   date?: string;
   wrapperBorderClass?: string;
@@ -143,9 +138,7 @@ export type ProductsType = {
   id: number;
   image: StaticImageData;
   title: string;
-  price: number;
-  quantity: number;
-  discount?: number
+  description: string;
 }
 
 

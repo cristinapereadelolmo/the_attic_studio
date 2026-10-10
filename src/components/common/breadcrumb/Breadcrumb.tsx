@@ -6,8 +6,7 @@ type TProps = {
 const Breadcrumb = ({ title }: TProps) => {
     return (
         <>
-            <section className="page-title-area page-title-spacing p-relative zindex-1 "
-                style={{ backgroundImage: `url(${WorkBg.src})` }}>
+            <section className="page-title-area page-title-spacing p-relative zindex-1 ">
                 <div className="ms-overlay ms-overlay8 p-absolute zindex--1"></div>
                 <div className="container">
                     <div className="row justify-content-center">

@@ -5,7 +5,7 @@ import imageTwo from "../../../../public/assets/img/testimonial/testimonial-02.j
 import imageThree from "../../../../public/assets/img/testimonial/testimonial-03.jpg";
 import imageFour from "../../../../public/assets/img/testimonial/testimonial-04.jpg";
 import imageFive from "../../../../public/assets/img/testimonial/testimonial-05.png";
-import signatureImage from "../../../../public/assets/img/testimonial/testimonial-signature.png";
+import signatureImage from "../../../../public/assets/img/testimonial/signature.png";
 //swiper-slider
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -77,10 +77,11 @@ const TestimonialSliderOne = () => {
                                         <i className="flaticon-quotation"></i>
                                     </div>
                                     <div className="section__title-wrapper mb-30 bd-title-anim">
-                                        <span className="section__subtitle">Clients Feedback</span>
-                                        <h2 className="section__title"><span className="animated-underline active">Public
-                                            Awesome</span> {" "}
-                                            Comments
+                                        <span className="section__subtitle">Testimonials</span>
+                                        <h2 className="section__title">What do{" "}
+                                            <span className="animated-underline active">artists</span> {" "}  who have worked with {" "}
+                                            <span className="animated-underline active">us</span> {" "}
+                                            have to say?
                                         </h2>
                                     </div>
                                     <div className="ms-tm-content">

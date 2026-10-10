@@ -69,7 +69,7 @@ const ContactForm = () => {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 placeholder="Phone Number"
-                                required
+                                
                             />
                             {touched.number && <ErrorMsg error={errors.number} />}
                         </div>

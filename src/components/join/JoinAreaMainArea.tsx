@@ -13,7 +13,7 @@ const JoinAreaMainArea = () => {
         <>
             <section className="ms-join-area pb-60 pt-130 p-relative">
                 <div className="ms-join-position p-absolute text-center">
-                    <h2 className="ms-title2 white-text mb-50">Join With us</h2>
+                    <h2 className="ms-title2 white-text mb-50">Join our Mailing List</h2>
                     <div className="ms-banner3-item-wrap ms-join-img-grid">
                         <div className="ms-banner3-item d-none d-md-block">
                             <div className="ms-banner3-img1 ms-opacity-2 p-relative m-img">

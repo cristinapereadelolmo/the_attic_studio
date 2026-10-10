@@ -56,20 +56,8 @@ const Setting = () => {
         <div className={`bd-theme-settings-area transition-3 ${openSetting ? "settings-opened" : ""}`}>
             <div className="bd-theme-wrapper">
                 <div className="bd-theme-header text-center">
-                    <h4 className="bd-theme-header-title">Template Settings</h4>
+                    <h4 className="bd-theme-header-title">Settings</h4>
                 </div>
-                <div className={`bd-theme-dir mb-20 ${direction}`}>
-                    <label className="bd-theme-dir-main" htmlFor="bd-dir-toggler">
-                        <span className={`bd-theme-dir-${direction} ${direction === 'ltr' ? 'active' : ''}`}>
-                            {direction === 'rtl' ? 'RTL' : 'LTR'}
-                        </span>
-                        <input type="checkbox" id="bd-dir-toggler" onChange={toggleDirection} checked={direction === 'ltr'} />
-                        <i className="bd-theme-dir-slide"></i>
-                        <span className={`bd-theme-dir-${direction} ${direction === 'rtl' ? 'active' : ''}`}>
-                            {direction === 'rtl' ? 'LTR' : 'RTL'}
-                        </span>
-                    </label>
-                </div> 
                 
                 <div className="bd-theme-settings">
                     <div className="bd-theme-settings-wrapper">

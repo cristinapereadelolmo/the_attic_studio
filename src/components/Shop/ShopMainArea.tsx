@@ -5,7 +5,7 @@ import ProductArea from './ProductArea';
 const ShopMainArea = () => {
     return (
         <>
-            <ShopBradcrumb title='Shop' />
+            <ShopBradcrumb title='Studio Equipment' />
             <ProductArea />
         </>
     );

@@ -157,10 +157,10 @@
 	}
 }
 
-.ms-event3-date {
+.ms-event3-date { 
 	position: absolute;
-	font-weight: 600;
-	font-size: 20px;
+	font-weight: 550;
+	font-size: 16px;
 	color: var(--clr-common-white);
 	top: 35px;
 	inset-inline-start: 30px;
@@ -224,17 +224,17 @@
 }
 
 .ms-event3-img {
+	img {
+		transition: transform 1.5s ease;
+	}
+
 	.ms-overlay10 {
 		@include transition(0.3s);
 	}
 
 	&:hover {
-		.ms-overlay10 {
-			background: linear-gradient(180deg, rgba(255, 193, 7, 0.24) 0%, var(--clr-theme-1) 100%);
-		}
-
 		img {
-			@include transform(scale(1.1));
+			@include transform(scale(1.5));
 		}
 	}
 }

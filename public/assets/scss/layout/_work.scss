@@ -15,7 +15,8 @@
 		inset-inline-start: 0;
 		height: 100%;
 		width: 100%;
-		background: var(--clr-bg-2);
+		// background: var(--clr-bg-2);
+		background: #000000;
 		opacity: 0.8;
 		z-index: -1;
 	}
@@ -65,7 +66,7 @@
 }
 
 .work__features-content {
-	max-width: 325px;
+	max-width: 550px;
 
 	h4 {
 		color: var(--clr-common-white);

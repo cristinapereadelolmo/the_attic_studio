@@ -1,14 +1,14 @@
 import React from 'react';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import FaqArea from './FaqArea';
-import PartnerAreaMain from '../common/PartnerArea/PartnerAreaMain';
+import EnquireForm from '@/components/enquiry-list/EnquireForm';
 
 const FaqMainArea = () => {
     return (
         <>
-            <Breadcrumb title='Frequently Ask question' />
+            <Breadcrumb title='Frequently Asked question' />
             <FaqArea />
-            <PartnerAreaMain borderWrapperClass='ms-border5' spacingClass='pt-130' />
+            <EnquireForm />
         </>
     );
 };

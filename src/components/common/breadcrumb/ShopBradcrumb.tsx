@@ -7,8 +7,7 @@ type TShopTitle = {
 const ShopBradcrumb = ({ title }: TShopTitle) => {
     return (
         <>
-            <section className="page-title-area page-title-spacing p-relative zindex-1"
-                style={{ backgroundImage: `url(${ShopPageTitleImg.src})` }}>
+            <section className="page-title-area page-title-spacing p-relative zindex-1">
                 <div className="ms-overlay ms-overlay9 p-absolute zindex--1"></div>
                 <div className="container">
                     <div className="row justify-content-center">

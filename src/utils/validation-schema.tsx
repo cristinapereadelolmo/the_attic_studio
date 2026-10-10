@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 export const contact_schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
-  number: Yup.string().required().min(11).label("Phone Number"),
+  number: Yup.string().label("Phone Number"),
   subject: Yup.string().required().label("Phone Number"),
   massage: Yup.string().required().min(20).label("Massage"),
 });
@@ -13,7 +13,7 @@ export const contact_schema = Yup.object().shape({
 export const register_schema = Yup.object().shape({
   name: Yup.string().required().label("Username"),
   email: Yup.string().required().email().label("Email"),
-  phoneNum: Yup.string().required().min(11).label("Phone Number"),
+  phoneNum: Yup.string().label("Phone Number"),
   password: Yup.string().required().min(6).label("Password"),
   confirmPass: Yup.string()
     .required()
@@ -46,9 +46,7 @@ export const enquireForm = Yup.object().shape({
   firstName: Yup.string().required().label("First name"),
   lastName: Yup.string().required().label("Last name"),
   email: Yup.string().required().email().label("Email"),
-  number: Yup.string().required().min(11).label("Phone"),
-  eventType: Yup.string().required().label("Event Type"),
-  eventLocation: Yup.string().required().label("Event Location"),
+  number: Yup.string().label("Phone"),
   writeSomething: Yup.string().required().label("Write Something")
 });
 //Comment schema
@@ -79,7 +77,7 @@ export const refundSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   productId: Yup.string().required().label("Product Id"),
   paymentId: Yup.string().required().label("Payment Id"),
-  phone: Yup.number().required().min(11).label("Phone"),
+  phone: Yup.number().label("Phone"),
   email: Yup.string().required().email().label("Email"),
   productName: Yup.string().required().label("Product Name"),
   massage: Yup.string().required().min(20).label("Message"),

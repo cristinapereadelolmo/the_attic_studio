@@ -1,21 +1,17 @@
 "use client"
 import React, { useState } from 'react';
 import GenresSidebar from './GenresSidebar';
-import NavContactTab from './NavContactTab';
 import NavProfileTab from './NavProfileTab';
 import GenresContent from './GenresContent';
 import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';
 import GenresBgImg from '../../../public/assets/img/genres/genres-bg-2.jpg';
-import Link from 'next/link';
 import BookingArea from './BookingArea';
 import BrandLikeArea from './BrandLikeArea';
 import GenresFaq from './GenresFaq';
 import { idType } from '@/types/types';
 import genres_listing_data from '@/data/genres-listing-data';
-import GetRatting from '@/hooks/GetRating';
 import ModalVideo from "@/components/VideoPopup/VideoModal";
-import PartnerAreaMain from '../common/PartnerArea/PartnerAreaMain';
 
 const GenresDetailsMainArea = ({ id }: idType) => {
     const genreData: any = genres_listing_data.find((item) => item.id == id)
@@ -41,18 +37,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
                                 </div>
                                 <h2 className="ms-title2 white-text mb-20">{genreData.title}</h2>
                                 <p className="ms-text2">{genreData.description}</p>
-                                <div className="ms-fun-brand-bottom border-0">
-                                    <div className="ms-fun-brand-location">
-                                        <Link href={genreData.mapLink} target="_blank"> <i
-                                            className="flaticon-pin"></i>{genreData.location}</Link>
-                                    </div>
-                                    <div className="ms-fun-brand-rating">
-                                        <GetRatting
-                                            averageRating={genreData.ratings}
-                                        />
-                                        <span>({genreData.ratingNum})</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,7 +47,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
                             <Image src={GenresBgImg} loader={imageLoader} placeholder="blur"
                                 loading='lazy' style={{ width: '100%', height: "auto" }}
                                 alt="genres image" />
-                            <span className="ms-genres-price">From $99</span>
                         </div>
                     </div>
                 </div>
@@ -83,9 +66,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
                                                 data-bs-target="#nav-profile" type="button" role="tab"
                                                 aria-controls="nav-profile" aria-selected="false">Watch &
                                                 listen</button>
-                                            <button className="nav-link prevent" id="nav-contact-tab" data-bs-toggle="tab"
-                                                data-bs-target="#nav-contact" type="button" role="tab"
-                                                aria-controls="nav-contact" aria-selected="false">Reviews</button>
                                         </div>
                                     </nav>
                                 </div>
@@ -99,10 +79,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
                                             aria-labelledby="nav-profile-tab" tabIndex={0}>
                                             <NavProfileTab />
                                         </div>
-                                        <div className="tab-pane fade" id="nav-contact" role="tabpanel"
-                                            aria-labelledby="nav-contact-tab" tabIndex={0}>
-                                            <NavContactTab />
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +90,6 @@ const GenresDetailsMainArea = ({ id }: idType) => {
             <BookingArea />
             <GenresFaq />
             <BrandLikeArea />
-            <PartnerAreaMain borderWrapperClass='ms-border5' spacingClass='pt-130' />
             <ModalVideo isOpen={isOpen} videoUrl="https://www.youtube.com/watch?v=ffQJRqlgf4E" onClose={() => setIsOpen(false)} />
         </>
     );

@@ -1,3 +1,4 @@
+"use client"
 import NiceSelect from '@/components/common/NiceSelect';
 import { enquireForm } from '@/utils/validation-schema';
 import { useFormik } from 'formik';
@@ -18,9 +19,8 @@ const EnquireFormList = () => {
                 lastName: "",
                 email: "",
                 number: "",
-                eventLocation: "",
                 writeSomething: "",
-                termsAndConditions: isChecked,
+                // termsAndConditions: isChecked,
             },
             validationSchema: enquireForm,
             onSubmit: (values, { resetForm }) => {
@@ -30,10 +30,14 @@ const EnquireFormList = () => {
             },
         });
     const EnquirySelectOption = [
-        { id: 1, optionName: "Choose Event" },
-        { id: 2, optionName: "Clare Culture Night" },
-        { id: 3, optionName: "Ensemble Cupar" },
-        { id: 4, optionName: "Live Music" },
+        { id: 1, optionName: "Choose Service" },
+        { id: 2, optionName: "Recording" },
+        { id: 3, optionName: "Mixing" },
+        { id: 4, optionName: "Product & Song Development" },
+        { id: 5, optionName: "Live Acoustic Videos" },
+        { id: 6, optionName: "Remote Recording" },
+        { id: 7, optionName: "Lessons" },
+        { id: 8, optionName: "Other" },
     ]
 
     const selectHandler = (selectedOption: any) => {
@@ -106,13 +110,13 @@ const EnquireFormList = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="ms-input-box">
-                            <label>Event Date</label>
+                            <label>Date (optional)</label>
                             <DatePicker selected={startDate} onChange={(date: Date | null) => setStartDate(date)} />
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="ms-input-box">
-                            <label>Event Type</label>
+                            <label>Service</label>
                             <NiceSelect
                                 options={EnquirySelectOption}
                                 defaultCurrent={0}
@@ -122,19 +126,7 @@ const EnquireFormList = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="ms-input-box">
-                            <label>Event Location</label>
-                            <textarea cols={30} rows={10}
-                                name="eventLocation"
-                                value={values.eventLocation}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                placeholder="unction Central, 86-90 Paul Street, London, EC2A 4NE United State of America."></textarea>
-                            {touched.eventLocation && <ErrorMsg error={errors.eventLocation} />}
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                         <div className="ms-input-box">
                             <label>Write Something</label>
                             <textarea cols={30} rows={10}
@@ -142,13 +134,13 @@ const EnquireFormList = () => {
                                 value={values.writeSomething}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
-                                placeholder="Outstanding wedd ing band playing chart, indie, rock anthems."></textarea>
+                                placeholder="Tell us what you're interested in and how we can help!"></textarea>
                             {touched.writeSomething && <ErrorMsg error={errors.writeSomething} />}
                         </div>
                     </div>
                     <div className="col-xl-12">
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
+                            {/* <div className="col-lg-6">
                                 <label className="ms-checkbox">
                                     <span>I Read Your <Link href="/terms-condition">Terms And Conditions</Link>
                                         {" "} Also {" "}
@@ -157,9 +149,9 @@ const EnquireFormList = () => {
                                     <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
                                     <span className="checkmark"></span>
                                 </label>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="ms-submit-btn text-lg-end mb-10">
+                            </div> */}
+                            <div className="col-lg-12">
+                                <div className="ms-submit-btn text-end mb-10">
                                     <button type="submit" className="unfill__btn">Send
                                         enquiry</button>
                                 </div>

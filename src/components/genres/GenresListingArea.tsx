@@ -1,6 +1,5 @@
 "use client"
 import genres_listing_data from '@/data/genres-listing-data';
-import GetRatting from '@/hooks/GetRating';
 import { imageLoader } from '@/hooks/ImageLoader';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -73,7 +72,7 @@ const GenresListingArea = () => {
                             aria-labelledby="home-tab" tabIndex={0}>
                             <div className="row">
                                 {
-                                    genres_listing_data.slice(0, 14).map((item) => (
+                                    genres_listing_data.map((item) => (
                                         <div className="col-xl-6" key={item.id}>
                                             <div className="ms-genres-item ms-genres-flex mb-25">
                                                 <div className="ms-genres-img ms-br-15 fix w-img genres-img-214">
@@ -88,26 +87,13 @@ const GenresListingArea = () => {
                                                             href={item.videoUrl}><i
                                                                 className="fa-sharp fa-solid fa-play"></i></Link>
                                                     }
-                                                    <span className="ms-genres-price">From ${item.price}</span>
                                                 </div>
                                                 <div className="ms-genres-content p-relative">
-                                                    <span className={`ms-genres-star ${item.activeClass}`}><i className="fa-light fa-star"></i></span>
+                                                    {/* <span className={`ms-genres-star ${item.activeClass}`}><i className="fa-light fa-star"></i></span> */}
                                                     <h4 className="ms-genres-title">
                                                         <Link href={`/genres-details/${item.id}`}>{item.title}</Link>
                                                     </h4>
                                                     <p className="mb-30">{item.description}</p>
-                                                    <div className="ms-fun-brand-bottom ms-genres-rating">
-                                                        <div className="ms-fun-brand-location">
-                                                            <Link href={item.mapLink} target="_blank"> <i
-                                                                className="flaticon-pin"></i>{item.location}</Link>
-                                                        </div>
-                                                        <div className="ms-fun-brand-rating">
-                                                            <GetRatting
-                                                                averageRating={item.ratings}
-                                                            />
-                                                            <span>({item.ratingNum})</span>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,7 +110,7 @@ const GenresListingArea = () => {
                             tabIndex={0}>
                             <div className="row">
                                 {
-                                    genres_listing_data.slice(14, 23).map((item) => (
+                                    genres_listing_data.map((item) => (
                                         <div className="col-xl-4 col-lg-6" key={item.id}>
                                             <div className="ms-genres-item mb-25">
                                                 <div className="ms-genres-img ms-br-15 fix w-img mb-30">
@@ -139,25 +125,12 @@ const GenresListingArea = () => {
                                                             href={item.videoUrl}>
                                                             <i className="fa-sharp fa-solid fa-play"></i></Link>
                                                     }
-                                                    <span className="ms-genres-price">From ${item.price}</span>
                                                 </div>
                                                 <div className="ms-genres-content p-relative">
                                                     <span className={`ms-genres-star ${item.activeClass}`}><i className="fa-light fa-star"></i></span>
                                                     <h4 className="ms-genres-title">
                                                         <Link href={`/genres-details/${item.id}`}>{item.title}</Link></h4>
                                                     <p className="mb-30">{item.description}</p>
-                                                    <div className="ms-fun-brand-bottom ms-genres-rating">
-                                                        <div className="ms-fun-brand-location">
-                                                            <Link href={item.mapLink} target="_blank"> <i
-                                                                className="flaticon-pin"></i>{item.location}</Link>
-                                                        </div>
-                                                        <div className="ms-fun-brand-rating">
-                                                            <GetRatting
-                                                                averageRating={item.ratings}
-                                                            />
-                                                            <span>({item.ratingNum})</span>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

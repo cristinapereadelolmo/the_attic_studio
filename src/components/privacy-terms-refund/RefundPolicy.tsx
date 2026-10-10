@@ -1,135 +1,115 @@
 import React from 'react';
-import RefundFormSection from './RefundFormSection';
+import EnquireForm from '@/components/enquiry-list/EnquireForm';
+import FaqArea from '../about/FaqArea';
+import Link from 'next/link';
 
 const RefundPolicy = () => {
     return (
         <>
-            <div className="terms_conditions_content">
-                <h2 className="warpper_title mb-25">
-                    Product Refund Policy
-                </h2>
-                <p>
-                    At musicly, we strive to provide you with high-quality products and an exceptional shopping experience. However, we understand that there may be instances where you need to return a product. We want to make the process as smooth as possible for you, so please take a moment to review our product refund policy.
-                </p>
-                <h2 className="info_title">
-                    Eligibility for Refund
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li> <span className="list_item_text">
-                        To be eligible for a refund, the product must be in its original condition, unused, and in its original packaging. </span>
-                    </li>
-                    <li><span className="list_item_text">Returns must be initiated within [X] days of receiving the product.
-                    </span></li>
-                    <li><span className="list_item_text"> Personalized or customized items may not be eligible for a refund unless they arrive damaged or with a defect.</span></li>
-                </ul>
-                <h2 className="info_title">Initiating a Return</h2>
-                <ul className="icon_list unordered_list_block">
-                    <li><span className="list_item_text">To initiate a return, please contact our customer support team at [Customer Support Email] or [Customer Support Phone Number].</span></li>
-                    <li><span className="list_item_text">Our customer support team will guide you through the return process and provide you with a Return Merchandise Authorization (RMA) number if required. </span></li>
-                    <li> <span className="list_item_text">Personalized or customized items may not be eligible for a refund unless they arrive damaged or with a defect.</span></li>
-                </ul>
+            <section className="terms_conditions_section section_space_lg pt-60 pb-60">
+                <div className="container">
+                    <div className="row"></div>
+                    <div className="terms_conditions_content">
+                    <h2 className="info_title"><Link href="/contact">*Payment plans available <br /> get in touch to find out more</Link></h2>
 
-                <h2 className="info_title">
-                    Return Shipping
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            1. Customers are responsible for the cost of return shipping unless the product arrived damaged or with a defect.
-                        </span>
-                    </li>
-                    <li>
-                        <span className="list_item_text">
-                            2. We recommend using a trackable shipping service to ensure that your return reaches us safely.
-                        </span>
-                    </li>
-                </ul>
+                        <h2 className="warpper_title mb-25">
+                            <Link href="/services">Recording</Link> - Hourly
+                        </h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li> <span className="list_item_text">€40/hour</span></li>
+                            <li><span className="list_item_text"> 2 hour minimum booking</span></li>
+                            <li><span className="list_item_text"> Perfect for vocal sessions, overdubs, poetry recording or short recording sessions
+                            </span></li>
+                        </ul>
 
-                <h2 className="info_title">
-                    Inspection and Processing
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            1. Once we receive your returned product, our team will inspect it to ensure it meets our eligibility criteria.
-                        </span>
-                    </li>
-                    <li>
-                        <span className="list_item_text">
-                            2. If the product qualifies for a refund, we will process the refund within [X] business days.
-                        </span>
-                    </li>
-                    <li>
-                        <span className="list_item_text">
-                            2. Refunds will be issued to the original payment method used for the purchase.
-                        </span>
-                    </li>
-                </ul>
-                <h2 className="info_title">
-                    Refund Amount
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            The refund amount will include the cost of the product and any applicable taxes.
-                        </span>
-                    </li>
-                    <li>
-                        <span className="list_item_text">
-                            Shipping fees are non-refundable unless the return is due to a shipping error on our part.
-                        </span>
-                    </li>
-                </ul>
-                <h2 className="info_title">
-                    Damaged or Defective Products
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            If you receive a damaged or defective product, please contact us immediately.
-                        </span>
-                    </li>
-                    <li>
-                        <span className="list_item_text">
-                            We may request photos or other documentation to assess the issue and provide a replacement or refund.
-                        </span>
-                    </li>
-                </ul>
-                <h2 className="info_title">
-                    Exchanges
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            We do not offer direct exchanges. If you need a different product, please return the original item following our refund policy guidelines and place a new order.
-                        </span>
-                    </li>
-                </ul>
-                <h2 className="info_title">
-                    Non-Refundable Items
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            Gift cards and downloadable software or digital products are non-refundable.
-                        </span>
-                    </li>
-                </ul>
-                <h2 className="info_title">
-                    Changes to this Policy
-                </h2>
-                <ul className="icon_list unordered_list_block">
-                    <li>
-                        <span className="list_item_text">
-                            musicly reserves the right to update or modify this refund policy at any time without prior notice. Any changes will be effective immediately upon posting on our website.
-                        </span>
-                    </li>
-                </ul>
-                <p>If you have any questions or concerns regarding our product refund policy, please do not hesitate to contact our customer support team. We are here to assist you and ensure that you have a positive shopping experience with us.
-                    Thank you for choosing musicly!</p>
+                        <h2 className="warpper_title mb-25"><Link href="/services">Recording</Link> - Half Day</h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li><span className="list_item_text">€37.5/hour (€150 total*)</span></li>
+                            <li><span className="list_item_text">4 hours of recording</span></li>
+                            <li><span className="list_item_text">Ideal for recording a single song, demos or focused production sessions</span></li>
+                        </ul>
 
-            </div>
-            <RefundFormSection />
+                        <h2 className="warpper_title mb-25">
+                            <Link href="/services">Recording</Link> - Full Day
+                        </h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li>
+                                <span className="list_item_text">
+                                    €35/hour (€280 total*)
+                                </span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">
+                                    8 hours of recording
+                                </span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">
+                                    Best value for full-band tracking, longer production sessions and larger recording projects
+                                </span>
+                            </li>
+                        </ul>
+
+                        <h2 className="warpper_title mb-25">
+                            <Link href="/services">Mixing</Link>
+                        </h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li>
+                                <span className="list_item_text">
+                                    €200 per song
+                                </span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">
+                                    3 revisions included in price
+                                </span>
+                            </li>
+
+                        </ul>
+                        <h2 className="warpper_title mb-25">
+                            <Link href="/services">Recording</Link> - Student Sessions 
+                        </h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li>
+                                <span className="list_item_text">
+                                    €35/hour
+                                </span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">Offer available for recording sessions happening Monday to Friday from 9am to 4pm</span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">
+                                    We are pleased to offer a special student rate for students in third level education (please note valid student ID to be presented on day of recording) 
+                                </span>
+                            </li>
+                        </ul>
+                        <h2 className="warpper_title mb-25">
+                            <Link href="/services">Lessons</Link>
+                        </h2>
+                        <ul className="icon_list unordered_list_block">
+                            <li>
+                                <span className="list_item_text">
+                                    €35 for a 45 minute class 
+                                </span>
+                            </li>
+                            <li>
+                                <span className="list_item_text">Guitar, Bass or Ukelele</span>
+                            </li>
+                        </ul>
+
+                        <div className="mt-60 mb-40" style={{ textAlign: 'center' }}>
+                            <Link className="unfill__btn" href="/services">Learn About Our Services</Link>
+                        </div>
+
+                        
+                    </div>
+                    <p>Not sure how much time your project needs?<br /> <Link href="/contact" style={{ textDecoration: 'underline' }}>Get in touch</Link> and we'll happily recommend the best option.
+                    </p>
+                    <EnquireForm />
+                    <FaqArea />
+                </div>
+            </section>
         </>
     );
 };

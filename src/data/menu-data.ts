@@ -26,28 +26,66 @@ const menu_data: TMenuItem[] = [
     {
         id: 1,
         title: "Home",
-        link: "#",
-        hasDropdown: true,
-        submenus: [
-            { title: "Home Style 01", link: "/" },
-            { title: "Home Style 02", link: "/home-2" },
-            { title: "Home Style 03", link: "/home-3" },
-        ],
+        link: "/",
+        hasDropdown: false,
     },
     {
         id: 2,
-        hasDropdown: false,
         title: "About us",
-        link: "/about",
+        link: "#",
+        hasDropdown: true,
+        submenus: [
+            { title: "About the Studio", link: "/about" },
+            { title: "About the Team", link: "/team-details" },
+        ],
     },
     {
         id: 3,
-        hasDropdown: false,
-        title: "How It Works",
-        link: "/work-system",
+        title: "Services, Equipments & Rates",
+        link: "#",
+        hasDropdown: true,
+        submenus: [
+            { title: "Services", link: "/services" },
+            { title: "Studio Equipment", link: "/equipment" },
+            { title: "Rates", link: "/rates" },
+        ],
     },
+    // {
+    //     id: 3,
+    //     hasDropdown: false,
+    //     title: "Studio Equipment",
+    //     link: "/shop",
+    // },
+    // {
+    //     id: 4,
+    //     hasDropdown: false,
+    //     title: "Services",
+    //     link: "/enquiry-list",
+    // },
+    //     {
+    //     id: 5,
+    //     hasDropdown: false,
+    //     title: "Rates",
+    //     link: "/enquiry-list",
+    // },
     {
         id: 4,
+        title: "Sounds from The Attic",
+        link: "#",
+        hasDropdown: true,
+        submenus: [
+            { title: "Sounds from The Attic", link: "#" },
+            { title: "Testimonials", link: "#" },
+        ],
+    },
+    {
+        id: 5,
+        hasDropdown: false,
+        title: "Gallery",
+        link: "/gallery",
+    },
+    {
+        id: 6,
         title: "Pages",
         link: "#",
         megaMenu: true,
@@ -59,8 +97,6 @@ const menu_data: TMenuItem[] = [
                 title: "Page Layout 1", link: "#",
                 submenus: [
                     { title: "Home Style 01", link: "/" },
-                    { title: "Home Style 02", link: "/home-2" },
-                    { title: "Home Style 03", link: "/home-3" },
                     { title: "Ideas Advice", link: "/ideas-advice" },
                     { title: "Ideas Advice Details", link: "/ideas-advice-details" },
                     { title: "Team", link: "/team" },
@@ -88,7 +124,6 @@ const menu_data: TMenuItem[] = [
                     { title: "How It Works", link: "/work-system" },
                     { title: "Terms & Condition", link: "/terms-condition" },
                     { title: "Privacy & Policy", link: "/privacy-policy" },
-                    { title: "Refund Policy", link: "/refund-policy" },
                     { title: "Product Shipping", link: "/product-shipping" },
                 ],
             },
@@ -107,20 +142,10 @@ const menu_data: TMenuItem[] = [
         ],
     },
     {
-        id: 5,
-        hasDropdown: true,
-        title: "Blog",
-        link: "/news",
-        submenus: [
-            { title: "Blog", link: "/blog" },
-            { title: "Blog Details", link: "/blog-details" }
-        ],
-    },
-    {
-        id: 6,
+        id: 7,
         hasDropdown: false,
-        title: "Help Center",
-        link: "/contact",
+        title: "FAQ",
+        link: "/faq",
     },
 ]
 

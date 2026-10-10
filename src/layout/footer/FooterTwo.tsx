@@ -34,21 +34,6 @@ const FooterTwo = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-6 col-lg-6 col-md-12">
-                                    <div className="ms-subscribe2-form p-relative mb-10 d-none d-sm-block">
-                                        <i className="flaticon-mail"></i>
-                                        <input type="text" placeholder="Enter your mail" />
-                                        <button type="submit" className="ms-subscribe2-btn">Subscribe Now <i
-                                            className="fa-sharp fa-solid fa-paper-plane"></i></button>
-                                    </div>
-
-                                    <div className="ms-subscribe2-mobile p-relative mb-10 d-sm-none">
-                                        <i className="flaticon-mail"></i>
-                                        <input type="text" placeholder="Enter your mail" />
-                                        <button type="submit" className="ms-subscribe2-m-btn">Subscribe Now <i
-                                            className="fa-sharp fa-solid fa-paper-plane"></i></button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div className="row">

@@ -4,8 +4,10 @@
 /*  19 - banner css  */
 /* ------------------------------------------ */
 .ms-banner__main-wrapper {
-    padding-top: 50px;
-    padding-bottom: 140px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: 5;
 
     @media #{$sm,$xs} {
         padding-bottom: 80px;
@@ -57,12 +59,66 @@
     }
 }
 
+.ms-banner__bg-title-plain {
+    font-size: 110px;
+    line-height: 1;
+    font-family: var(--font-instrument-serif), serif;
+    font-weight: 600;
+    letter-spacing: 17px;
+    text-transform: none;
+    color: var(--clr-common-white);
+    margin-bottom: 30px;
+    margin-top: 100px;
+    display: inline-block;
+    text-shadow:
+        0 0 20px rgba(49, 49, 49, 0.6),
+        0 0 50px rgba(26, 26, 26, 0.4),
+        0 0 100px rgba(0, 0, 0, 0.25);
+
+    @media #{$lg, $md} {
+        font-size: 95px;
+    }
+
+    @media #{$sm, $xs} {
+        font-size: 75px;
+    }
+
+    @media #{$xxs} {
+        font-size: 65px;
+    }
+}
+
+.ms-banner__title-plain {
+    font-family: var(--font-instrument-serif), serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.4;
+    letter-spacing: 5px;
+    text-transform: none;
+    color: var(--clr-common-white);
+
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 5;
+
+    @media #{$lg} {
+        font-size: 42px;
+    }
+
+    @media #{$md, $sm, $xs} {
+        font-size: 34px;
+    }
+
+    @media #{$xxs} {
+        font-size: 28px;
+    }
+}
+
 .ms-banner__from-inner {
     border-radius: 32px;
     display: grid;
     padding: 5px 5px 5px 25px;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto;
     align-items: center;
     gap: 10px 30px;
 
@@ -71,7 +127,7 @@
     }
 
     @media #{$md} {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         padding: 20px 30px 35px 25px;
         border-radius: 10px;
         gap: 10px 90px;
@@ -99,13 +155,13 @@
             padding: 25px 20px;
         }
     }
-
 }
 
 .ms-banner__form-select {
     background: transparent;
     border: 0;
     position: relative;
+    z-index: 100;
 
     @media #{$sm, $xs} {
         width: 100%;
@@ -477,15 +533,19 @@
 
 }
 
-/* update-code */
 .ms-banner-area {
-    .m-nice-select {
-        .nice-select {
-            border: none;
+    .ms-overlay-1 {
+        position: relative;
+        z-index: 20;
 
-            .list {
-                background-color: white;
-            }
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index:1;
+            border-radius: inherit;
+            pointer-events: none; // just in case, keeps clicks/interactions passing through
         }
     }
 }

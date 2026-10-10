@@ -11,22 +11,21 @@ import LatestNewsOne from './LatestNewsOne';
 import PartnerAreaSliderOne from '../SliderElements/PartnerAreaSlider/PartnerAreaSliderOne';
 import CtaArea from './CtaArea';
 import SpecialEventSliderOne from '../SliderElements/SpecialEventSlider/SpecialEventSliderOne';
-
+import EnquireForm from '@/components/enquiry-list/EnquireForm';
 const HomeMainArea = () => {
     return (
         <>
-            <BrandSectionOne />
+            {/*<BrandSectionOne />*/}
             <HeroOne />
-            <TextScrollArea />
-            <PopularAreaOne />
+            {/* <TextScrollArea /> */}
+            {/* <PopularAreaOne /> */}
             <WorkArea />
-            <TrendingareaOne />
-            <FunctionBandsSectionOne />
-            <SpecialEventSliderOne />
+            {/* <TrendingareaOne /> */}
+            {/* <FunctionBandsSectionOne /> */}
+            {/* <SpecialEventSliderOne /> */}
             <TestimonialSliderOne />
             <LatestNewsOne />
-            <PartnerAreaSliderOne />
-            <CtaArea />
+            <EnquireForm />
         </>
     );
 };

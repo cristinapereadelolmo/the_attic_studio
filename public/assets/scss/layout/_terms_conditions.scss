@@ -13,34 +13,44 @@
 	}
 
 	.warpper_title {
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: var(--bd-fw-sbold);
 		line-height: 1.2;
-		text-transform: capitalize;
+		// text-transform: capitalize;
 		color: var(--clr-common-white);
 
 		@media #{$xs,$sm,$lg,$md} {
-			font-size: 28px;
+			font-size: 25px;
 		}
 
 		@media #{$xs} {
-			font-size: 26px;
+			font-size: 22px;
+		}
+	}
+
+	.warpper_title a {
+		color: inherit;
+		text-decoration: underline;
+
+		&:hover {
+			color: var(--clr-theme-1);
 		}
 	}
 
 	p {
 		font-size: 16px;
 		line-height: 26px;
-		text-transform: capitalize;
+		// text-transform: capitalize;
 		color: var(--clr-text-5);
 		margin-bottom: 30px;
 	}
 
 	.info_title {
-		font-size: 20px;
+		font-size: 14px;
 		color: var(--clr-text-3);
 		font-weight: 500;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+		text-align: right;
 		@include transition(0.3s);
 
 		&:hover {
@@ -134,7 +144,7 @@
 	color: var(--clr-text-5);
 	margin-bottom: 30px;
 	line-height: 26px;
-	text-transform: capitalize;
+	// text-transform: capitalize;
 }
 
 .musicly_list_item {

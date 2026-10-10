@@ -1,24 +1,38 @@
 "use client"
 import Link from 'next/link';
-import React from 'react';
-import bannerBg from '../../../public/assets/img/banner/banner-thumb-01.jpg';
-import bannerTitleBg2 from '../../../public/assets/img/banner/title-bg.jpg';
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import bannerBg from '../../../public/assets/img/banner/studio-hero.jpg';
 import NiceSelect from '../common/NiceSelect';
-import { bannerFormSelectOne, bannerFormSelectThree, bannerFormSelectTwo } from '@/data/nice-select-data';
+
+const pageOptions = [
+    { id: 1, optionName: "What are you looking for today?", link: "" },
+    { id: 2, optionName: "Information about the Studio", link: "/about" },
+    { id: 3, optionName: "Services offered", link: "/services" },
+    { id: 4, optionName: "Studio Equipment", link: "/equipment" },
+    { id: 5, optionName: "Rates", link: "/rates" },
+    { id: 6, optionName: "FAQ", link: "/faq" },
+];
 
 const HeroOne = () => {
-    const selectHandler = () => { }
+    const router = useRouter();
+    const [selectedLink, setSelectedLink] = useState(pageOptions[0].link);
+
+    const selectHandler = (selectedOption: any) => {
+        setSelectedLink(selectedOption.link);
+    };
+
+    const handleGo = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (selectedLink) {
+            router.push(selectedLink);
+        }
+    };
+
     return (
         <>
             <section className="ms-banner-area p-relative">
                 <Link className="ms-scroll-down" href="#">SCROLL DOWN</Link>
-                <div className="ms-banner-social p-absolute">
-                    <div className="ms-footer-social">
-                        <Link href="https://www.instagram.com/" title="Instagram" target="_blank">IN</Link>
-                        <Link href="https://twitter.com/" title="Twitter" target="_blank">TW</Link>
-                        <Link href="https://www.facebook.com/" title="Facebook" target="_blank">FB</Link>
-                    </div>
-                </div>
                 <div className="container-fluid ms-maw-1710">
                     <div className="ms-br-30 mx-auto include__bg z-index-1 ms-overlay-1 p-relative"
                         style={{ backgroundImage: `url(${bannerBg.src})` }}>
@@ -27,39 +41,19 @@ const HeroOne = () => {
                                 <div className="col-xl-11">
                                     <div className="ms-banner__main-wrapper">
                                         <div className="ms-banner__content text-center">
-                                            <h1 className="ms-banner__bg-title"
-                                                style={{ backgroundImage: `url(${bannerTitleBg2.src})` }}>
-                                                Musicly
+                                            <h1 className="ms-banner__bg-title-plain">
+                                                The Attic Studio
                                             </h1>
-                                            <h2 className="ms-banner__title msg_title bd-title-anim">Exceptional
-                                                Live Bands &amp;
-                                                Musicians
-                                                Hire For Your Event or Party</h2>
+                                            <h2 className="ms-banner__title-plain msg_title bd-title-anim">
+                                                Dublin Boutique Music Studio
+                                            </h2>
                                         </div>
                                         <div className="ms-banner__form bdFadeUp">
-                                            <form action="#">
+                                            <form onSubmit={handleGo}>
                                                 <div className="ms-banner__from-inner white-bg">
-                                                    <div className="ms-banner__form-select m-nice-select">
-                                                        <NiceSelect
-                                                            options={bannerFormSelectOne}
-                                                            defaultCurrent={0}
-                                                            onChange={selectHandler}
-                                                            name=""
-                                                            className=""
-                                                        />
-                                                    </div>
-                                                    <div className="ms-banner__form-select m-nice-select">
-                                                        <NiceSelect
-                                                            options={bannerFormSelectTwo}
-                                                            defaultCurrent={0}
-                                                            onChange={selectHandler}
-                                                            name=""
-                                                            className=""
-                                                        />
-                                                    </div>
                                                     <div className="ms-banner__form-select m-nice-select ms-border-none">
                                                         <NiceSelect
-                                                            options={bannerFormSelectThree}
+                                                            options={pageOptions}
                                                             defaultCurrent={0}
                                                             onChange={selectHandler}
                                                             name=""
@@ -67,9 +61,8 @@ const HeroOne = () => {
                                                         />
                                                     </div>
                                                     <div className="banner__form-button">
-                                                        <button className="input__btn"><i className="flaticon-loupe"></i>
-                                                            Find
-                                                            Acts</button>
+                                                        <button type="submit" className="input__btn"><i className="flaticon-loupe"></i>
+                                                            Go</button>
                                                     </div>
                                                 </div>
                                             </form>
