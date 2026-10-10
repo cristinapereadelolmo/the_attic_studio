@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Logo from '../../../public/assets/img/logo/logo.svg';
+import Logo from '../../../public/assets/img/logo/logo2.svg';
 import singerImg from '../../../public/assets/img/header/singer.png';
 import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import FooterLogo from '../../../public/assets/img/logo/footer-logo.png';
+import FooterLogo from '../../../public/assets/img/logo/footer-logo.svg';
 import MenuDotImg from '../../../public/assets/img/header/menu-dot.png';
 import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';

@@ -1,12 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
-import headerLogo from "../../../public/assets/img/logo/studio-logo.png";
-import genresImg from "../../../public/assets/img/genres/genres-01.jpg";
-import genresImg2 from "../../../public/assets/img/genres/genres-02.jpg";
-import genresImg3 from "../../../public/assets/img/genres/genres-03.jpg";
-import genresImg4 from "../../../public/assets/img/genres/genres-04.jpg";
-import genresImg5 from "../../../public/assets/img/genres/genres-05.jpg";
+import headerLogo from "../../../public/assets/img/logo/logo2.svg";
 import Image from 'next/image';
 import { imageLoader } from '@/hooks/ImageLoader';
 import Menus from './menus';
@@ -33,7 +28,7 @@ const HeaderOne = () => {
                                         "header__main d-flex align-items-center justify-content-between"}>
                                         <div className="header__logo pt-25 pb-25">
                                             <Link href="#">
-                                                <Image priority width={50} height={50} src={headerLogo} alt="logo not found" style={{ width: '90px', height: '90px', objectFit: 'cover' }} />
+                                                <Image priority width={100} height={50} src={headerLogo} alt="logo not found" style={{ width: '190px', height: '90px', objectFit: 'cover' }} />
                                             </Link>
                                         </div>
                                         
